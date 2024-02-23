@@ -1,3 +1,2 @@
 # Vef2
-
-Hall+o heimur
+This is so git
