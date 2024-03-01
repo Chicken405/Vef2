@@ -7,6 +7,38 @@ body {
     background-color: var(--bg-1);
     z-index: -2;
 }
+.booking-input {
+    display: none;
+}
+#booking-input-1 ~ label{
+    background-color: var(--bg-9);
+}
+#booking-input-2 ~ label{
+    background-color: var(--bg-9);
+    
+}
+#booking-input-3 ~ label{
+    background-color: var(--bg-9);
+}
+#booking-input-4 ~ label{
+    background-color: var(--bg-9);
+}
+
+
+#booking-input-1:checked ~ label{
+    background-color: var(--bg-8);
+}
+#booking-input-2:checked ~ label{
+    background-color: var(--bg-8);
+    
+}
+#booking-input-3:checked ~ label{
+    background-color: var(--bg-8);
+}
+#booking-input-4:checked ~ label{
+    background-color: var(--bg-8);
+}
+
 main {
     margin: 0;
     padding: 0;
@@ -124,10 +156,54 @@ nav {
     text-align: center;
 }
 .main-table {
-    border: 1em solid black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 5px solid var(--text-bg-1);
+    border-radius: 0.5em;
+    color: var(--text-bg-1);
+    font-family: 'Roboto', sans-serif;
+}  
+.main-table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
 }
-.main-table tbody tr {
-    border: 1em solid black;
+.main-table tr {
+    padding: .35em;
+}
+.main-table th,
+.main-table td {
+    padding: .625em;
+    text-align: center;
+}
+.main-table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.main-form {
+    display: grid;
+    margin-top: 5em;
+    padding: 1em;
+    justify-self: center;
+    color: var(--nc-tx-1);
+    border: 5px solid var(--text-bg-1);
+    border-radius: 0.5em;
+    grid-gap: 1em;
+    justify-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-3);
+}
+.main-form div {
+    justify-self: left;
+    width: 100%;
+}
+.main-form h1 {
+    text-align: center;
+    justify-self: center;
+}
+.main-form label {
+    font-weight: bolder;
 }
 .background-border {
     margin: 1em;
@@ -233,6 +309,60 @@ footer {
         padding: 1em;
     }
 }
+@media screen and (max-width: 600px) {
+    .main-table {
+        width: 80vw;
+        justify-self: center;
+    }
+    .main-table caption {
+        font-size: 1.3em;
+    }
+    
+    .main-table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .main-table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .main-table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    .main-table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+    .main-form {
+        grid-template-columns: 1fr;
+    }
+    .filler {
+        display: none;
+    }
+}
 @keyframes logo-animation {
     0% {
         margin-left: 0%;
@@ -268,6 +398,8 @@ footer {
     --bg-6: rgb(207, 207, 251);
     --bg-7: rgb(46, 108, 63);
     --bg-8: rgb(223, 245, 255);
+    --bg-9: rgb(156, 156, 255);
+
 
 	/* Dark theme */
 	--text-bg-1-dark: #ffffff;
@@ -281,6 +413,7 @@ footer {
     --bg-6-dark: rgb(112, 112, 243);
     --bg-7-dark: rgb(36, 73, 46);
     --bg-8-dark: white;
+    --bg-9-dark: rgb(19, 19, 152);
 }
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -295,5 +428,6 @@ footer {
         --bg-6: var(--bg-6-dark);
         --bg-7: var(--bg-7-dark);
         --bg-8: var(--bg-8-dark);
+        --bg-9: var(--bg-9-dark);
 	}
 }
