@@ -13,18 +13,22 @@ body {
 #booking-input-1 ~ label{
     background-color: var(--bg-9);
     color: var(--text-bg-1);
+    border-radius: 2px;
 }
 #booking-input-2 ~ label{
     background-color: var(--bg-9);
     color: var(--text-bg-1);
+    border-radius: 2px;
 }
 #booking-input-3 ~ label{
     background-color: var(--bg-9);
     color: var(--text-bg-1);
+    border-radius: 2px;
 }
 #booking-input-4 ~ label{
     background-color: var(--bg-9);
     color: var(--text-bg-1);
+    border-radius: 2px;
 }
 
 
