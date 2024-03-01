@@ -415,7 +415,7 @@ footer {
     --bg-5-dark: rgb(223, 179, 1);
     --bg-6-dark: rgb(112, 112, 243);
     --bg-7-dark: rgb(36, 73, 46);
-    --bg-8-dark: grey;
+    --bg-8-dark: gray;
     --bg-9-dark: rgb(19, 19, 152);
 }
 @media (prefers-color-scheme: dark) {
