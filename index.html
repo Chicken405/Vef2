@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 </head>
 <body>
     <label for="menu-toggle" class="menu-label">&#x2630;</label>
     <input type="checkbox" id="menu-toggle">
     <section class="top-menu">
         <div class="menu-items">
-            <p><a href="../Booking page/index.html">Book Now!</a></p>
+            <p><a href="../Homepage/index.html">Return to homepage</a></p>
             <p><a href="#" onclick="name_popup()">Signup</a></p>
             <p><a class="social-grid" href="https://www.facebook.com/zuck/">Facebook<img src="https://www.svgrepo.com/show/475647/facebook-color.svg"></a></p>
             <p><a class="social-grid" href="https://www.facebook.com/zuck/">TikTok<img src="https://www.svgrepo.com/show/452114/tiktok.svg"></a></p>
@@ -48,88 +46,73 @@
         </section>
     </aside>
     <main>
+        <header class="main-header">
+            <h1>Cruising the Name</h1>
+            <p>Welcome to our crusing page!</p>
+        </header>
         <section class="main-section">
-            <section>
-                <header class="main-header">
-                    <div class="logo-container">
-                        <h1>Cruising the Name</h1>
-                        <aside class="icon-logo-container">
-                            <span class="icon-peace-logo"></span>
-                        </aside>
+            <div class="main-form background-border">
+                <form>
+                    <div>
+                        <label for="fname">Full legal name:</label><br>
+                        <input type="text" id="full-name" name="full-name" placeholder="John Doe"><br>
                     </div>
-                    <p>Welcome to our crusing page!</p>
-                </header>
-                <div class="main-image">
-                    <div id="animation-block" class="animation-block-class">
-                        <div>
-                            <h1>A trip of a lifetime</h1>
-                        </div>
-                        <div>
-                            <h1>A ocean filled with life</h1>
-                        </div>
-                        <div>
-                            <h1>Come and join us on this adventure!</h1>
-                        </div>
+                    <div>
+                        <label for="lname">Full legal address:</label><br>
+                        <input type="text" id="full-address" name="full-address" placeholder="Kirkjutorg 4"><br>
                     </div>
-                    <img src="https://img.atlasobscura.com/8WQhQ0SjlrVkKHDTqElxCviWT4wt9VeuDr8LWrgex8A/rs:fill:12000:12000/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8zMjlmMmE0Yzgw/NDZkZjFlZDlfRDNL/NTFKLmpwZw.jpg">
-                </div>
-                <section class="first-section">
-                    <div class="cruise-image">
-                        <h1>Cruise exterior</h1>
-                        <img src="https://www.thetimes.co.uk/travel/wp-content/uploads/sites/6/2022/01/MSC-Seashore-by-Conrad-Schutt118.jpg">
+                    <div>
+                        <label for="lname">Full credit/debit card number:</label><br>
+                        <input type="number" id="full-card-number" name="full-card-number" placeholder="0123-4567-8910-1112" required><br>
                     </div>
-                    <div class="background-border">
-                        <h1>Welcome aboard!</h1>
-                        <p>Begin the adventure of your lifetime today with us!</p>
-                        <div>
-                            <div class="book-now-button">
-                                <a href="../Booking page/index.html"><p>Book now!</p></a>
-                            </div>
-                        </div>
+                    <div>
+                        <input type="submit" value="Submit">
                     </div>
-                </section>
-                <section class="second-section">
-                    <div class="cruise-image">
-                        <h1>Cruise interior</h1>
-                        <img src="https://images3.alphacoders.com/863/863668.jpg">
-                    </div>
-                    <div class="background-border paragraph-info">
-                        <h1 style="text-align: center;">Its not done yet</h1>
-                        <p>The cruise have 3 pools and 400 jetskis for the 20,000 max capacity cruise. It even has a aquarium, a zoo, a waterpark, and to top that off, a prison!</p>
-                        <img src="https://t4.ftcdn.net/jpg/01/01/25/49/500_F_101254939_aTjWzlr5HUGz4FATI1bbEW8Mw3es3qbT.jpg">
-                    </div>
-                </section>
-            </section>
-            <section>
-                <header class="picture-header">
-                    <h1>↓ Pictures ↓</h1>
-                </header>
-                <section class="third-section">
-                    <div class="background-border">
-                        <h1>Guaranteed king size bed</h1>
-                        <img src="https://i2-prod.dublinlive.ie/incoming/article11389252.ece/ALTERNATES/s1227b/disneymagic19.jpg">
-                    </div>
-                    <div class="background-border">
-                        <h1>Guaranteed Casino!</h1>
-                        <img src="https://d8i7t4j4.rocketcdn.me/wp-content/uploads/2018/06/CCL_Horizon_Casino-Bar_0394.jpg">
-                    </div>
-                    <div class="background-border">
-                        <h1>Guaranteed water park!</h1>
-                        <img src="https://th.bing.com/th/id/R.42bc4a8b4931f285c5685330c852ac7e?rik=NGhAZ0xR645BlQ&pid=ImgRaw&r=0">
-                    </div>
-                </section>
-                <div class="background-border">
-                    <div class="book-now-button">
-                        <a href="../Booking page/index.html"><p>Book now!</p></a>
-                    </div>
-                </div>
-            </section>
+                </form>
+            </div>
+            <table class="main-table">
+                <caption>Statement Summary</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Account</th>
+                    <th scope="col">Due Date</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Period</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Account">Visa - 3412</td>
+                    <td data-label="Due Date">04/01/2016</td>
+                    <td data-label="Amount">$1,190</td>
+                    <td data-label="Period">03/01/2016 - 03/31/2016</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Account">Visa - 6076</td>
+                    <td data-label="Due Date">03/01/2016</td>
+                    <td data-label="Amount">$2,443</td>
+                    <td data-label="Period">02/01/2016 - 02/29/2016</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Account">Corporate AMEX</td>
+                    <td data-label="Due Date">03/01/2016</td>
+                    <td data-label="Amount">$1,181</td>
+                    <td data-label="Period">02/01/2016 - 02/29/2016</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Account">Visa - 3412</td>
+                    <td data-label="Due Date">02/01/2016</td>
+                    <td data-label="Amount">$842</td>
+                    <td data-label="Period">01/01/2016 - 01/31/2016</td>
+                  </tr>
+                </tbody>
+              </table>
         </section>
-        <footer>
-            <h1>Footer</h1>
-            <p>About Us</p>
-            <div style="height: 200em;"></div>
-        </footer>
-    </main>
+    <footer>
+        <h1>Footer</h1>
+        <p>About Us</p>
+        <div style="height: 20em;"></div>
+    </footer>
+  </main>
 </body>
 </html>
