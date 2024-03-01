@@ -12,7 +12,7 @@
     <input type="checkbox" id="menu-toggle">
     <section class="top-menu">
         <div class="menu-items">
-            <p><a href="index.html">Return to homepage</a></p>
+            <p><a href="../Homepage/index.html">Return to homepage</a></p>
             <p><a href="#" onclick="name_popup()">Signup</a></p>
             <p><a class="social-grid" href="https://www.facebook.com/zuck/">Facebook<img src="https://www.svgrepo.com/show/475647/facebook-color.svg"></a></p>
             <p><a class="social-grid" href="https://www.facebook.com/zuck/">TikTok<img src="https://www.svgrepo.com/show/452114/tiktok.svg"></a></p>
@@ -71,53 +71,55 @@
                         <label for="lname">Full credit/debit card number:</label><br>
                         <input type="number" id="full-card-number" name="full-card-number" placeholder="0123-4567-8910-1112" required><br>
                     </div>
+                    <table class="main-table">
+                        <caption><h1>Ticket Price: 21.999$</h1></caption>
+                        <thead>
+                          <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Month</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">Booking</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row" data-label="Day">11</td>
+                            <td data-label="Month">Feb</td>
+                            <td data-label="Year">2024</td>
+                            <td data-label="Book"><input type="radio" class="booking-input" id="booking-input-1" name="booking" value="Book Now!"><label for="booking-input-1">Book Now!</label></td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Day">23</td>
+                            <td data-label="Month">Dec</td>
+                            <td data-label="Year">2030</td>
+                            <td data-label="Book"><input type="radio" class="booking-input" id="booking-input-2" name="booking" value="Book Now!"><label for="booking-input-2">Book Now!</label></td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Day">29</td>
+                            <td data-label="Month">Jul</td>
+                            <td data-label="Year">2036</td>
+                            <td data-label="Book"><input type="radio" class="booking-input" id="booking-input-3" name="booking" value="Book Now!"><label for="booking-input-3">Book Now!</label></td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Day">25</td>
+                            <td data-label="Month">Oct</td>
+                            <td data-label="Year">2054</td>
+                            <td data-label="Book"><input type="radio" class="booking-input" id="booking-input-4" name="booking" value="Book Now!"><label for="booking-input-4">Book Now!</label></td>
+                          </tr>
+                        </tbody>
+                    </table>
                     <div>
                         <input type="submit" value="Submit">
                     </div>
                 </form>
             </div>
-            <table class="main-table">
-                <caption>Statement Summary</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Account</th>
-                    <th scope="col">Due Date</th>
-                    <th scope="col">Amount</th>
-                    <th scope="col">Period</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td data-label="Account">Visa - 3412</td>
-                    <td data-label="Due Date">04/01/2016</td>
-                    <td data-label="Amount">$1,190</td>
-                    <td data-label="Period">03/01/2016 - 03/31/2016</td>
-                  </tr>
-                  <tr>
-                    <td scope="row" data-label="Account">Visa - 6076</td>
-                    <td data-label="Due Date">03/01/2016</td>
-                    <td data-label="Amount">$2,443</td>
-                    <td data-label="Period">02/01/2016 - 02/29/2016</td>
-                  </tr>
-                  <tr>
-                    <td scope="row" data-label="Account">Corporate AMEX</td>
-                    <td data-label="Due Date">03/01/2016</td>
-                    <td data-label="Amount">$1,181</td>
-                    <td data-label="Period">02/01/2016 - 02/29/2016</td>
-                  </tr>
-                  <tr>
-                    <td scope="row" data-label="Account">Visa - 3412</td>
-                    <td data-label="Due Date">02/01/2016</td>
-                    <td data-label="Amount">$842</td>
-                    <td data-label="Period">01/01/2016 - 01/31/2016</td>
-                  </tr>
-                </tbody>
-              </table>
         </section>
     <footer>
-        <h1>Footer</h1>
-        <p>About Us</p>
-        <div style="height: 20em;"></div>
+        <h1>About Us</h1>
+        <p>We are a cruising company that cruise around the world!</p>
+        <p>Company of origin: China</p>
+        <p>Address: 123 Main Street East</p>
     </footer>
   </main>
 </body>
